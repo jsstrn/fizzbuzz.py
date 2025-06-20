@@ -5,3 +5,6 @@ def main():
   for i in range(max):
     n = i + 1
     print(fizzbuzz(n))
+
+if __name__ == "__main__":
+  main()
