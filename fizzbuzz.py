@@ -2,13 +2,12 @@ def is_divisible_by(number: int, divisor: int) -> bool:
   return number % divisor == 0
 
 def fizzbuzz(n: int) -> str:
-  if is_divisible_by(n, 3) and is_divisible_by(n, 5):
-    return "FizzBuzz"
+  value = ""
   
   if is_divisible_by(n, 3):
-    return "Fizz"
+    value += "Fizz"
   
   if is_divisible_by(n, 5):
-    return "Buzz"
+    value += "Buzz"
   
-  return str(n)
+  return value or str(n)
